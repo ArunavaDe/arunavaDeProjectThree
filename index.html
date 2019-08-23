@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/51f81a2ff5.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Domine:700&display=swap" rel="stylesheet">
+    <title>Indian Grub Hub</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <img src="./assets/mandala.png" alt="A mandala" class="animated slow rotateIn infinite">
+            <h1>indian food to match your mood</h1>
+            <a href="#myForm">find out now!</a>
+            
+        </div>
+    </header>
+    <main>
+        <form action="#" id="myForm">
+            
+                <section class="panel panel1">
+                    <div class="optionBox wrapper">
+                        <h2>What kind of spice tolerance do you have?</h2>
+                            <fieldset>
+                                <div class="answerOptions">
+                                    <div class="answerSet">
+                                        <input type="radio" id="spicy" name="spiceChoice" value="spicy">
+                                        <label for="spicy">dragon warrior</label>
+                                    </div>
+                
+                                    <div class="answerSet">
+                                        <input type="radio" id="mild" name="spiceChoice" value="mild">
+                                        <label for="mild">cool cucumber</label>
+                                    </div>
+                                </div>
+
+                                <i class="fas fa-pepper-hot iconSet animated bounce infinite"></i>
+        
+                                
+                            </fieldset>
+                            <a href="#quantity">Next</a>
+                            <!-- <input type="reset" value="start again"> -->
+                    </div>
+                </section>
+                    
+            
+                <section class="panel panel2">
+                    <div id="quantity" class="optionBox wrapper">
+                        <h2>What kind of serving would you like?</h2>
+                            <fieldset>
+                                <div class="answerOptions">
+                                    <div class="answerSet">
+                                        <input type="radio" id="fullMeal" name="mealQuantity" value="fullMeal">
+                                        <label for="fullMeal">regal</label>
+                                    </div>
+                
+                                    <div class="answerSet">
+                                        <input type="radio" id="quickBite" name="mealQuantity" value="quickBite">
+                                        <label for="quickBite">modest</label>
+                                    </div>
+                                </div>
+
+                                <i class="fas fa-drumstick-bite iconSet animated wobble infinite"></i>
+        
+                                
+                            </fieldset>
+                            <a href="#date">Next</a>
+                            
+                    </div>
+                </section>
+                    
+                <section class="panel panel3">
+                    <div id="date" class="optionBox wrapper">
+                        <h2>Are you on a date?</h2>
+                            <fieldset>
+                                <div class="answerOptions">
+                                    <div class="answerSet">
+                                        <input type="radio" id="date" name="dateOrNot" value="date">
+                                        <label for="date">yes</label>
+                                    </div>
+                
+                                    <div class="answerSet">
+                                        <input type="radio" id="notDate" name="dateOrNot" value="notDate">
+                                        <label for="notDate">i don't care about garlic breath</label>
+                                    </div>
+                                </div>
+
+                                <i class="fas fa-heart iconSet animated bounce infinite"></i>
+        
+                                
+                            </fieldset>
+                            <a href="#feeling">Next</a>
+                            
+                    </div>
+                </section>
+                    
+    
+            
+                <section class="panel panel4">
+                    <div id="feeling" class="optionBox wrapper">
+                        <h2>How are you feeling today?</h2>
+                            <fieldset>
+                                <div class="answerOptions">
+                                    <div class="answerSet">
+                                        <input type="radio" id="rd" name="moodToday" value="rd">
+                                        <label for="rd">reigning deity</label>
+                                    </div>
+                
+                                    <div class="answerSet">
+                                        <input type="radio" id="rs" name="moodToday" value="rs">
+                                        <label for="rs">righteous sovereign</label>
+                                    </div>
+                
+                                    <div class="answerSet">
+                                        <input type="radio" id="ff" name="moodToday" value="ff">
+                                        <label for="ff">famished farmer</label>
+                                    </div>
+                
+                                    <div class="answerSet">
+                                        <input type="radio" id="sm" name="moodToday" value="sm">
+                                        <label for="sm">spartan monk</label>
+                                    </div>
+                                </div>
+
+
+
+                                <i class="fas fa-utensils iconSet animated headShake infinite"></i>
+            
+                            </fieldset>
+                            <div class="finalButtons">
+                                <input type="submit" value="show me my result">
+                                <input type="reset" value="start again">
+                            </div>
+                    </div>
+                </section>
+
+                    <section class="finalResults">
+                        <div class="results wrapper" id="results">
+
+                        </div>
+                        
+                    </section>
+        </form>
+            
+        
+        
+    </main>
+    <footer>    
+        <p class="wrapper">&copy;hackerYou 2019</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

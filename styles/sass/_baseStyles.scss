@@ -1,0 +1,179 @@
+html {
+    font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    margin: 2rem 0 1.5rem;
+    
+}
+
+label {
+    text-transform: capitalize;
+    padding: 0.2rem;
+    
+}
+
+header {
+   
+    background-color: #FFC875;
+    padding: 2rem 0 1rem;
+
+    img {
+        max-width: 20%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    h1 {
+        font-family: 'Domine', serif;
+        font-size: 5rem;
+        text-transform: capitalize;
+        text-align: center;
+        margin: 2rem 0 0;
+
+    }
+
+    a {
+        display: block;
+        margin: 4rem auto;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-size: 1rem;
+        padding: 1rem;
+        background: blue;
+        border-radius: 2%;
+        color: white;
+        width: 20%;
+    }
+}
+
+
+.optionBox {
+    fieldset {
+        border: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    
+}
+
+.panel {
+    padding: 4rem;
+    h2 {
+        margin: 0;
+    }
+
+    a {
+        font-size: 0.7rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4%;
+        display: block;
+        width: 10%;
+        color: white;
+        background: #177E89;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.panel1 {
+    background-color: #DBB68F;
+}
+
+.panel2 {
+    background-color: #C9E4CA; 
+}
+
+.panel3 {
+    background-color: #A7D49B;
+}
+
+.panel4 {
+    background-color: #C5EFCB;
+}
+
+.finalButtons {
+    margin-top: 3rem;
+    display: flex;
+
+    input {
+        font-size: 0.8rem;
+        margin-right: 0.2rem;
+        border: 0;
+        background: #177E89;
+        color: white;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        border-radius: 3%;
+        letter-spacing: 0.15rem;
+        
+    }
+    
+}
+
+.iconSet {
+    font-size: 10rem;
+}
+
+
+footer {
+    background-color: #2EC4B6;
+    color: black;
+    padding: 1rem;
+    p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.finalResults {
+    background-color: #A0EADE;
+    padding: 3rem;
+
+}
+.results {
+
+
+    input {
+        display: block;
+        margin: 1.5rem auto;
+        padding: 1rem;
+        border: none;
+        background: #F6F7F8;
+        color: black;
+        border-radius: 5%; 
+        text-transform: capitalize;
+    }
+    h2 {
+        margin: 0;
+        text-align: center;
+        font-family: 'Roboto', Sans-Serif;
+        font-size: 3rem;
+    }
+}
+
+.panel {
+    h2 {
+        
+        Font-Family: 'Roboto', Sans-Serif;
+        font-size: 2rem;
+    }
+}
