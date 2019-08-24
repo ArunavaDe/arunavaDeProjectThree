@@ -64,7 +64,7 @@ header {
     fieldset {
         border: none;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
         padding: 0;
     }
@@ -160,7 +160,7 @@ footer {
         background: #F6F7F8;
         color: black;
         border-radius: 5%; 
-        text-transform: capitalize;
+        text-transform: uppercase;
     }
     h2 {
         margin: 0;
