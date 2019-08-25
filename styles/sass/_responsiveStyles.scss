@@ -1,6 +1,18 @@
 
 // Responsive styles added here
 
+
+// For very large screens
+@media all and (min-width:1500px) {
+    
+    .wrapper {
+        max-width: 1200px;
+    }
+}
+
+
+// for large screen tablets or laptops with smaller screens
+
 @media all and (min-width:901px) and (max-width:1024px) {
 
     html {
@@ -34,6 +46,8 @@
     }
 }
 
+// for large screen phones and medium sceen devices (eg. Kindle fire)
+
 @media all and (min-width:785px) and (max-width:900px) {
 
     html {
@@ -50,6 +64,7 @@
 
         a {
             font-size: 1rem;
+            width: 25%;
         }
     }
 
@@ -59,6 +74,8 @@
         }
     }
 }
+
+// for medium screen phones
 
 @media all and (min-width:671px) and (max-width:784px) {
 
@@ -75,6 +92,7 @@
 
         a {
             font-size: 1rem;
+            width: 25%;
         }
     }
 
@@ -84,6 +102,8 @@
         }
     }
 }
+
+// for smaller screen phones
 
 @media all and (min-width:501px) and (max-width:670px) {
 
@@ -112,6 +132,10 @@
 
 
 }
+
+
+// for smaller screen phones
+
 @media all and (min-width:421px) and (max-width: 500px) {
     html {
         font-size: 75%;
@@ -149,6 +173,8 @@
         }
     }
 }
+
+
 @media all and (min-width:376px) and (max-width:420px) {
 
     html {
@@ -234,6 +260,9 @@
         }
     }
 }
+
+
+// for very small screen phones
 
 @media all and (max-width:320px) {
     html {

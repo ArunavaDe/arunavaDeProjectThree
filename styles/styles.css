@@ -373,6 +373,12 @@ footer p {
   font-size: 3rem;
 }
 
+@media all and (min-width: 1500px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
 @media all and (min-width: 901px) and (max-width: 1024px) {
   html {
     font-size: 90%;
@@ -406,6 +412,7 @@ footer p {
   }
   .panel a {
     font-size: 1rem;
+    width: 25%;
   }
   .finalButtons input {
     font-size: 1rem;
@@ -424,6 +431,7 @@ footer p {
   }
   .panel a {
     font-size: 1rem;
+    width: 25%;
   }
   .finalButtons input {
     font-size: 1rem;
