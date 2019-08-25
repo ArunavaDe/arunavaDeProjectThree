@@ -1,3 +1,6 @@
+
+// food Object declared here
+
 const food = {
     spicy: [
     {
@@ -280,12 +283,18 @@ const food = {
     ]
 };
 
+// setting to document ready 
+
 $(document).ready(function(){
+
+    // function to get random item from array set up here
 
     const getRandomItem = function(array) {
         const random = Math.floor(Math.random() * array.length);
         return array[random];
     }
+
+    // behaviour after submit button is hit is setup here
 
     $('form').on('submit', function(event){
         event.preventDefault();
@@ -302,7 +311,8 @@ $(document).ready(function(){
         const userMood = $('input[name="moodToday"]:checked').val();
         
     
-        
+        // Looking for empty fields 
+
         if (userDate === undefined || userSpiceLevel === undefined || userQuantity === undefined || userMood === undefined) {
             
             $('.results').html(`<h2>Oops! Looks like you missed something. I can help you better if you answer all the questions!</h2> <input type="reset" value="try it again">`);
@@ -310,6 +320,7 @@ $(document).ready(function(){
         } 
         else {
         
+        // parsing array to find match from food object     
 
         const foodArray = food[userSpiceLevel];
         
@@ -330,6 +341,8 @@ $(document).ready(function(){
         }
     })
     
+    // reset behaviour set up here
+
     $('form').on('reset', function(){
         
         $('.results').html(``);

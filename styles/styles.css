@@ -236,6 +236,12 @@ header a {
   width: 20%;
 }
 
+header a:hover,
+header a:focus {
+  background: white;
+  color: blue;
+}
+
 .optionBox fieldset {
   border: none;
   display: -webkit-box;
@@ -257,6 +263,8 @@ header a {
 
 .panel h2 {
   margin: 0;
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 2rem;
 }
 
 .panel a {
@@ -274,6 +282,12 @@ header a {
   letter-spacing: 0.1rem;
 }
 
+.panel a:hover,
+.panel a:focus {
+  color: #177E89;
+  background: white;
+}
+
 .panel1 {
   background-color: #DBB68F;
 }
@@ -288,6 +302,21 @@ header a {
 
 .panel4 {
   background-color: #C5EFCB;
+}
+
+.iconSet {
+  font-size: 10rem;
+}
+
+footer {
+  background-color: #2EC4B6;
+  color: black;
+  padding: 1rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1rem;
 }
 
 .finalButtons {
@@ -309,19 +338,10 @@ header a {
   letter-spacing: 0.15rem;
 }
 
-.iconSet {
-  font-size: 10rem;
-}
-
-footer {
-  background-color: #2EC4B6;
-  color: black;
-  padding: 1rem;
-}
-
-footer p {
-  text-align: center;
-  font-size: 1rem;
+.finalButtons input:focus,
+.finalButtons input:hover {
+  color: #177E89;
+  background: white;
 }
 
 .finalResults {
@@ -340,16 +360,17 @@ footer p {
   text-transform: uppercase;
 }
 
+.results input:focus,
+.results input:hover {
+  background: black;
+  color: #F6F7F8;
+}
+
 .results h2 {
   margin: 0;
   text-align: center;
   font-family: 'Roboto', Sans-Serif;
   font-size: 3rem;
-}
-
-.panel h2 {
-  Font-Family: 'Roboto', Sans-Serif;
-  font-size: 2rem;
 }
 
 @media all and (min-width: 901px) and (max-width: 1024px) {
