@@ -335,7 +335,7 @@ footer p {
   text-transform: uppercase;
   padding: 0.5rem;
   border-radius: 3%;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 
 .finalButtons input:focus,
