@@ -82,11 +82,17 @@ header {
 // answer options are sttyled here
 
 .optionBox {
-    fieldset {
+    .fieldSet {
         border: none;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        padding: 0;
+
+    }
+
+    fieldset {
+        border: none;
         padding: 0;
     }
 

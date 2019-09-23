@@ -264,7 +264,7 @@ header a:focus {
   color: blue;
 }
 
-.optionBox fieldset {
+.optionBox .fieldSet {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,6 +276,11 @@ header a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0;
+}
+
+.optionBox fieldset {
+  border: none;
   padding: 0;
 }
 
