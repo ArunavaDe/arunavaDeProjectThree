@@ -15,16 +15,25 @@ body {
     margin: 0 auto;
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mandala {
+    animation: rotation infinite 20s linear;
+}
+
 input[type="radio"] {
     margin: 2rem 0 1.5rem;
     
 }
 
-label {
-    text-transform: capitalize;
-    padding: 0.2rem;
-    
-}
 
 // header styles start here
 
@@ -83,6 +92,19 @@ header {
 
     
 }
+label {
+    span {
+        color: black;
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+}
+
+.answerOptions {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
 
 .panel {
     padding: 4rem;
@@ -123,10 +145,6 @@ header {
 }
 
 .panel3 {
-    background-color: #A7D49B;
-}
-
-.panel4 {
     background-color: #C5EFCB;
 }
 
@@ -207,4 +225,6 @@ footer {
         font-family: 'Roboto', Sans-Serif;
         font-size: 3rem;
     }
+
+   
 }

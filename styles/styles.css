@@ -193,13 +193,35 @@ body {
   margin: 0 auto;
 }
 
-input[type="radio"] {
-  margin: 2rem 0 1.5rem;
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
-label {
-  text-transform: capitalize;
-  padding: 0.2rem;
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.mandala {
+  -webkit-animation: rotation infinite 20s linear;
+          animation: rotation infinite 20s linear;
+}
+
+input[type="radio"] {
+  margin: 2rem 0 1.5rem;
 }
 
 header {
@@ -257,6 +279,25 @@ header a:focus {
   padding: 0;
 }
 
+label span {
+  color: black;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.answerOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .panel {
   padding: 4rem;
 }
@@ -297,10 +338,6 @@ header a:focus {
 }
 
 .panel3 {
-  background-color: #A7D49B;
-}
-
-.panel4 {
   background-color: #C5EFCB;
 }
 

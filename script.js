@@ -306,14 +306,12 @@ $(document).ready(function(){
         
         const userQuantity = $('input[name="mealQuantity"]:checked').val();
         
-        const userDate = $('input[name="dateOrNot"]:checked').val();
-        
         const userMood = $('input[name="moodToday"]:checked').val();
         
     
         // Looking for empty fields 
 
-        if (userDate === undefined || userSpiceLevel === undefined || userQuantity === undefined || userMood === undefined) {
+        if (userSpiceLevel === undefined || userQuantity === undefined || userMood === undefined) {
             
             $('.results').html(`<h2>Oops! Looks like you missed something. I can help you better if you answer all the questions!</h2> <input type="reset" value="try it again">`);
             
@@ -327,7 +325,7 @@ $(document).ready(function(){
         
         const filteredArray = [];
         for( let i = 0; i < foodArray.length; i++) {
-            if((userQuantity === foodArray[i].mealQuantity) && (userDate === foodArray[i].dateOrNot) && (userMood === foodArray[i].moodToday)) {
+            if((userQuantity === foodArray[i].mealQuantity) && (userMood === foodArray[i].moodToday)) {
                 filteredArray.push(foodArray[i].title);
             }
         }
